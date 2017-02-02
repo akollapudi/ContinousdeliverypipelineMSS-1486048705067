@@ -30,8 +30,8 @@ import com.saucelabs.junit.SauceOnDemandTestWatcher;
 @RunWith(ConcurrentParameterized.class)
 public class HelloWorldTest implements SauceOnDemandSessionIdProvider {
 
-	public String username = "imandikheerthi";
-	public String accesskey = "c5920de5-6718-4b6f-9a38-8eec1b5c78c5";
+	public String username = "milmss";
+	public String accesskey = "373b9f20-ab46-4958-89c0-9640ff88558a";
 
 
 	public SauceOnDemandAuthentication authentication = new SauceOnDemandAuthentication(
@@ -125,7 +125,7 @@ public class HelloWorldTest implements SauceOnDemandSessionIdProvider {
 	public void CPTK_1000_spl100_New_flow() throws Exception {
 
 			driver.manage().window().maximize();
-			driver.get("http://myappdeletemss.mybluemix.net/");
+			driver.get("https://continousdeliverypipelinemss.mybluemix.net/");
 			String textfromid = driver.findElement(By.id("message")).getText();
 			if(textfromid.endsWith("Hello World Watson!"))
 			{
